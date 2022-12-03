@@ -1,0 +1,173 @@
+@import url("https://fonts.cdnfonts.com/css/br-firma");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "BR Firma", sans-serif;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #10204d;
+}
+
+img {
+  width: 100%;
+}
+
+/* utilities */
+
+.bright {
+  color: #545ed8;
+}
+
+.less-bright {
+  color: #043c93;
+  font-weight: 600;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding: 15px 17px;
+}
+
+.btn-primary {
+  background-color: #043c93;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+/* Header */
+header.header {
+  top: 0;
+  left: 0;
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  margin-top: 20px;
+  padding: 0 8%;
+}
+
+header > div.logo {
+  flex: 0.4;
+}
+
+header > div.logo img {
+  width: 170px;
+}
+
+header > nav.nav {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > nav.nav ul.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+header > nav.nav ul.nav-wrapper li.nav-items:not(:last-child) {
+  margin-right: 35px;
+}
+
+header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #10204d;
+}
+
+.showcase {
+  margin-top: 65px;
+  padding: 10rem;
+}
+
+.showcase-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 3rem;
+}
+
+.showcase-container > div.showcase-description h1 {
+  font-size: 5.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #10204d;
+}
+
+.showcase-container > div.showcase-description p {
+  color: #10204d;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.showcase-container > div.showcase-description .form-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.4rem;
+  background-color: #fff;
+  background: #ffffff;
+  border: 1.37103px solid #f4f4f4;
+  box-shadow: 0px 0px 183.718px rgba(0, 0, 0, 0.05);
+  border-radius: 6.85516px;
+  -webkit-border-radius: 6.85516px;
+  -moz-border-radius: 6.85516px;
+  -ms-border-radius: 6.85516px;
+  -o-border-radius: 6.85516px;
+}
+
+.showcase-container > div.showcase-description .form-display input {
+  border: none;
+  outline: 0;
+  font-family: "BR Firma", sans-serif;
+  padding: 0 1.6rem;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #10204d;
+}
+
+.showcase-container
+  > div.showcase-description
+  .form-display
+  input::placeholder {
+  color: #b3b3b3;
+}
+
+.showcase-container > div.showcase-description .form-display a.btn {
+  padding: 18px 22px;
+}
