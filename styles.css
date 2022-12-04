@@ -146,7 +146,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
   color: #10204d;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 2;
+  line-height: 1.8;
   margin-bottom: 3rem;
 }
 
@@ -241,7 +241,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .community-savings .community-savings-container .content p {
   color: #10204d;
   font-size: 1.5rem;
-  line-height: 2;
+  line-height: 1.8;
   margin-bottom: 4rem;
 }
 
@@ -283,7 +283,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .loans .loans-container .content p {
   color: #10204d;
   font-size: 1.5rem;
-  line-height: 2;
+  line-height: 1.8;
   margin-bottom: 4rem;
 }
 
@@ -302,7 +302,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .bills .bills-container .bills-pay-details {
   background-color: #fafafb;
   border-radius: 20px;
-  padding: 1.4rem 2rem 2rem 2rem;
+  padding: 2.5rem 3rem 2.5rem 3rem;
   display: flex;
   align-items: center;
   -webkit-border-radius: 20px;
@@ -321,14 +321,18 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .bills .bills-container .bills-pay-details > div p {
   color: #10204d;
   font-size: 1.4rem;
-  line-height: 2;
+  line-height: 1.8;
   margin-bottom: 2.4rem;
 }
 
 .bills .bills-container .send-receive-money {
   background-color: #fafafb;
   border-radius: 20px;
-  padding: 1.4rem 2rem 2rem 2rem;
+  padding: 2.5rem 3rem 2.5rem 3rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .bills .bills-container .send-receive-money img {
@@ -346,5 +350,130 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .bills .bills-container .send-receive-money p {
   color: #10204d;
   font-size: 1.4rem;
-  line-height: 2;
+  line-height: 1.8;
+}
+
+/* deposit */
+.deposit {
+  padding: 6.5rem;
+}
+
+.deposit .deposit-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5rem;
+}
+
+.deposit .deposit-container .card {
+  background-color: #fafafb;
+  padding: 2.5rem 3rem 2.5rem 3rem;
+  border-radius: 20px;
+}
+
+.deposit .deposit-container .card img {
+  width: 50px;
+}
+
+.deposit .deposit-container .card h3 {
+  color: #10204d;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.deposit .deposit-container .card p {
+  color: #10204d;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.deposit .deposit-container .invest {
+  background-color: #fafafb;
+  padding: 2.5rem 3rem 2.5rem 3rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.deposit .deposit-container .invest h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #10204d;
+  width: 80%;
+}
+
+.deposit .deposit-container .invest p {
+  color: #10204d;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+  width: 78%;
+}
+
+.get-started {
+  padding: 6.5rem;
+}
+
+.get-started .get-started-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 6rem;
+}
+
+.get-started .get-started-container .details h2 {
+  font-size: 4.4rem;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.get-started .get-started-container .details .details-info:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+
+.get-started .get-started-container .details .details-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.get-started .get-started-container .details .details-info .arrow-down {
+  display: flex;
+  flex-direction: column;
+}
+
+.get-started .get-started-container .details .details-info .arrow-down img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-left: -100px;
+  margin-top: 30px;
+}
+
+.get-started .get-started-container .details .details-info .arrow-down h3 {
+  color: #043c93;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.get-started .get-started-container .details .details-info > div:last-child h4 {
+  color: #10204d;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.get-started
+  .get-started-container
+  .details
+  .details-info
+  > div:last-child
+  h4:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+.get-started .get-started-container .details .details-info > div:last-child p {
+  color: #10204d;
+  font-size: 1.4rem;
+  line-height: 1.8;
 }
