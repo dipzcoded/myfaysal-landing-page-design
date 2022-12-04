@@ -56,6 +56,7 @@ img {
 }
 
 .btn {
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
   color: #fff;
@@ -125,7 +126,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 .showcase {
   margin-top: 65px;
-  padding: 10rem;
+  padding: 10.5rem;
 }
 
 .showcase-container {
@@ -188,7 +189,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 /* keywords */
 .keywords {
-  padding: 3rem 6rem 10rem 6rem;
+  padding: 3.5rem 6.5rem 10.5rem 6.5rem;
 }
 
 .keywords .keywords-container {
@@ -215,7 +216,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 }
 
 .community-savings {
-  padding: 6rem;
+  padding: 6.5rem;
   background-color: #fafafb;
 }
 
@@ -231,7 +232,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 }
 
 .community-savings .community-savings-container .content h2 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   font-weight: 500;
   margin-bottom: 2.5rem;
   color: #10204d;
@@ -239,9 +240,9 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 .community-savings .community-savings-container .content p {
   color: #10204d;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .absolute-img-1 {
@@ -261,7 +262,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 /* laons */
 .loans {
-  padding: 4rem 6rem 6rem 6rem;
+  padding: 4.5rem 6.5rem 6.5rem 6.5rem;
   background-color: #fafafb;
 }
 
@@ -273,7 +274,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 }
 
 .loans .loans-container .content h2 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   font-weight: 500;
   margin-bottom: 2.5rem;
   color: #10204d;
@@ -281,7 +282,69 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 .loans .loans-container .content p {
   color: #10204d;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
+}
+
+/* bills */
+.bills {
+  padding: 6.5rem;
+}
+
+.bills .bills-container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); */
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 5rem;
+}
+
+.bills .bills-container .bills-pay-details {
+  background-color: #fafafb;
+  border-radius: 20px;
+  padding: 1.4rem 2rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.bills .bills-container .bills-pay-details > div h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #10204d;
+}
+
+.bills .bills-container .bills-pay-details > div p {
+  color: #10204d;
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: 2.4rem;
+}
+
+.bills .bills-container .send-receive-money {
+  background-color: #fafafb;
+  border-radius: 20px;
+  padding: 1.4rem 2rem 2rem 2rem;
+}
+
+.bills .bills-container .send-receive-money img {
+  width: 50px;
+}
+
+.bills .bills-container .send-receive-money h3 {
+  color: #10204d;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.bills .bills-container .send-receive-money p {
+  color: #10204d;
+  font-size: 1.4rem;
+  line-height: 2;
 }
