@@ -668,3 +668,17 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .footer-details img {
   width: 200px;
 }
+
+.footer-summary {
+  padding: 0 6.5rem 6.5rem 6.5rem;
+}
+
+.footer-summary p {
+  color: #090429;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.footer-summary p:not(:last-child) {
+  margin-bottom: 3rem;
+}
