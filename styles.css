@@ -419,60 +419,72 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .get-started .get-started-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  grid-gap: 6rem;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 2rem;
+}
+
+.get-started .get-started-container > div:first-child img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .get-started .get-started-container .details h2 {
-  font-size: 4.4rem;
+  font-size: 4rem;
   color: #000;
   font-weight: 600;
   margin-bottom: 3rem;
 }
 
-.get-started .get-started-container .details .details-info:not(:last-child) {
-  margin-bottom: 3.5rem;
-}
-
 .get-started .get-started-container .details .details-info {
-  display: flex;
-  align-items: flex-start;
-}
-
-.get-started .get-started-container .details .details-info .arrow-down {
   display: flex;
   flex-direction: column;
 }
 
-.get-started .get-started-container .details .details-info .arrow-down img {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
-  margin-left: -100px;
-  margin-top: 30px;
+.get-started .get-started-container .details .details-info:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
-.get-started .get-started-container .details .details-info .arrow-down h3 {
-  color: #043c93;
-  font-weight: 500;
-  font-size: 3rem;
-}
-
-.get-started .get-started-container .details .details-info > div:last-child h4 {
-  color: #10204d;
-  font-size: 2.6rem;
-  font-weight: 600;
+.get-started .get-started-container .details .details-info > div:first-child {
+  display: flex;
 }
 
 .get-started
   .get-started-container
   .details
   .details-info
-  > div:last-child
-  h4:not(:last-child) {
-  margin-bottom: 6rem;
+  > div:first-child
+  h3 {
+  color: #043c93;
+  font-weight: 500;
+  font-size: 2.6rem;
 }
 
-.get-started .get-started-container .details .details-info > div:last-child p {
+.get-started
+  .get-started-container
+  .details
+  .details-info
+  > div:first-child
+  h4 {
+  color: #10204d;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.get-started .get-started-container .details .details-info .arrow-down {
+  display: flex;
+  align-items: center;
+  /* margin-top: 1rem; */
+  /* flex-direction: column; */
+}
+
+.get-started .get-started-container .details .details-info .arrow-down img {
+  width: auto;
+  height: 180px;
+  object-fit: contain;
+}
+.get-started .get-started-container .details .details-info .arrow-down p {
   color: #10204d;
   font-size: 1.4rem;
   line-height: 1.8;
