@@ -448,6 +448,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 .get-started .get-started-container .details .details-info > div:first-child {
   display: flex;
+  align-items: center;
 }
 
 .get-started
@@ -459,6 +460,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
   color: #043c93;
   font-weight: 500;
   font-size: 2.6rem;
+  margin-right: 3rem;
 }
 
 .get-started
@@ -475,15 +477,28 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .get-started .get-started-container .details .details-info .arrow-down {
   display: flex;
   align-items: center;
-  /* margin-top: 1rem; */
-  /* flex-direction: column; */
+  margin-top: 2rem;
 }
 
-.get-started .get-started-container .details .details-info .arrow-down img {
+.get-started .get-started-container .details .details-info .arrow-down div {
+  margin-right: 3rem;
+}
+
+.get-started .get-started-container .details .details-info .arrow-down div img {
   width: auto;
   height: 180px;
   object-fit: contain;
 }
+
+.get-started
+  .get-started-container
+  .details
+  .details-info.info-3
+  .arrow-down
+  p {
+  margin-left: 1.74rem;
+}
+
 .get-started .get-started-container .details .details-info .arrow-down p {
   color: #10204d;
   font-size: 1.4rem;
