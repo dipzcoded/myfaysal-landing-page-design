@@ -504,3 +504,71 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
   font-size: 1.4rem;
   line-height: 1.8;
 }
+
+.subscribe {
+  padding: 8.5rem;
+  background-color: #000000;
+}
+
+.subscribe .subscribe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 4rem;
+  align-items: center;
+}
+
+.subscribe .subscribe-container h2 {
+  color: #ffffff;
+  font-size: 3.8rem;
+}
+
+.subscribe .subscribe-container .content p {
+  color: #ffffff;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+.subscribe .subscribe-container .content .form-display {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(41, 45, 50, 0.61);
+  box-shadow: 0px 0px 199.307px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2.4rem;
+  border-radius: 5px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.subscribe .subscribe-container .content .form-display input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 0 2rem 0 0;
+  font-family: "BR Firma", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subscribe .subscribe-container .content .form-display input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.subscribe .subscribe-container .content .store-download {
+  display: flex;
+}
+
+.subscribe .subscribe-container .content .store-download img {
+  width: 140px;
+  height: auto;
+}
+
+.subscribe .subscribe-container .content .store-download img:first-child {
+  margin-right: 3rem;
+}
