@@ -572,3 +572,99 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .subscribe .subscribe-container .content .store-download img:first-child {
   margin-right: 3rem;
 }
+
+.footer {
+  padding: 8rem;
+}
+
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-gap: 4rem;
+  align-items: flex-start;
+}
+
+.footer .footer-container ul.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-container ul.footer-list h3 {
+  color: #090429;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.footer .footer-container ul.footer-list li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer .footer-container ul.footer-list li.footer-items a,
+.footer .footer-container ul.footer-list li.footer-items p {
+  color: #090429;
+  font-size: 1.4rem;
+}
+
+.footer .footer-container ul.footer-list.reach-us > div.social-icons {
+  display: flex;
+}
+.footer
+  .footer-container
+  ul.footer-list.reach-us
+  > div.social-icons
+  div:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer .footer-container ul.footer-list.reach-us > div.social-icons div {
+  background-color: #000;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.footer .footer-container ul.footer-list.reach-us > div.social-icons div img {
+  width: auto;
+  margin: 0 auto;
+  height: 18px;
+  object-fit: contain;
+}
+
+.footer-details {
+  padding: 6.5rem;
+}
+
+.footer-details .footer-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-details .content div {
+  display: flex;
+  align-items: center;
+}
+
+.footer-details .content div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer-details .content div p {
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+  color: #090429;
+}
+
+.footer-details .content div img {
+  width: 15px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-details img {
+  width: 200px;
+}
