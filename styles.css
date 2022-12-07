@@ -127,6 +127,14 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
   display: none;
 }
 
+.menu.notShowMenu {
+  display: none;
+}
+
+.cancel-menu.notShowMenu {
+  display: block;
+}
+
 /* showcase  */
 
 .showcase {
@@ -690,7 +698,8 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 header.sticky {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-  background-color: #fffffff8;
+
+  background-color: rgba(255, 255, 255, 0.96);
 }
 
 /* responsiveness*/
@@ -711,7 +720,6 @@ header.sticky {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.95);
   }
 
   .menu {
@@ -729,9 +737,14 @@ header.sticky {
     align-items: center;
     background-color: #10204df5;
     width: 40%;
-    min-height: 50rem;
+    min-height: 60rem;
     padding: 4rem 6rem;
     backdrop-filter: blur(2px);
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
   }
 
   header > nav.nav ul.nav-wrapper li.nav-items:not(:last-child) {
@@ -739,15 +752,23 @@ header.sticky {
   }
 
   header > nav.nav ul.nav-wrapper li.nav-items:not(:last-child) {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   header > nav.nav ul.nav-wrapper {
-    margin-bottom: 4.5rem;
+    margin-bottom: 5rem;
   }
 
   header > nav.nav ul.nav-wrapper {
     flex-direction: column;
+  }
+
+  header > nav.nav ul.nav-wrapper li.nav-items {
+    opacity: 0;
+  }
+
+  header > nav.nav a.btn {
+    opacity: 0;
   }
 
   header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
@@ -920,5 +941,25 @@ header.sticky {
 @media screen and (max-width: 400px) {
   .subscribe .subscribe-container .content .store-download img {
     width: 40%;
+  }
+}
+
+/* animation */
+@keyframes slideX {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 }
