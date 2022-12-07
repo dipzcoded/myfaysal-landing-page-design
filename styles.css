@@ -857,6 +857,10 @@ header.sticky {
   .footer-details .content {
     margin-bottom: 4rem;
   }
+
+  header > nav.nav {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -913,6 +917,10 @@ header.sticky {
     text-align: center;
   }
 
+  header > nav.nav {
+    width: 70%;
+  }
+
   /* .showcase-container > div:last-child {
     width: 400px;
   } */
@@ -941,6 +949,10 @@ header.sticky {
 @media screen and (max-width: 400px) {
   .subscribe .subscribe-container .content .store-download img {
     width: 40%;
+  }
+
+  header > nav.nav {
+    width: 85%;
   }
 }
 
