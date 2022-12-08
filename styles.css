@@ -105,12 +105,7 @@ header > div.logo {
 }
 
 header > div.logo img {
-  width: 60px;
-}
-
-header > div.logo h1 {
-  color: #043c93;
-  font-size: 2.8rem;
+  width: 65px;
 }
 
 header > nav.nav {
@@ -907,9 +902,9 @@ header.sticky {
     margin-bottom: 4rem;
   }
 
-  header > div.logo {
+  /* header > div.logo {
     flex: 1;
-  }
+  } */
 }
 
 @media screen and (max-width: 500px) {
