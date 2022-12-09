@@ -105,7 +105,7 @@ header > div.logo {
 }
 
 header > div.logo img {
-  width: 65px;
+  width: 105px;
 }
 
 header > nav.nav {
@@ -147,7 +147,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 /* showcase  */
 
 .showcase {
-  margin-top: 101px;
+  margin-top: 136px;
   padding: 10.5rem;
 }
 
@@ -739,7 +739,7 @@ header.sticky {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     position: absolute;
-    top: 101px;
+    top: 136px;
     right: -1000%;
     flex-direction: column;
     justify-content: center;
