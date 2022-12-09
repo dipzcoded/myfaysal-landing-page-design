@@ -33,10 +33,12 @@ listItems.forEach((el) => {
 });
 
 windowEvent.forEach((winEvt) => {
+  // scrolling
   window.addEventListener(winEvt, () => {
     mainNav.classList.toggle("sticky", window.scrollY > 0);
   });
 
+  // resize
   window.addEventListener(winEvt, (e) => {
     if (Number(e.target.innerWidth) > 800) {
       if (navList.classList.contains("show")) {

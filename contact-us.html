@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>myfaysal - Contact Us</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/Logo 2.png" alt="logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-wrapper">
+          <li class="nav-items">
+            <a href="index.html" class="nav-link"> Overview </a>
+          </li>
+          <li class="nav-items">
+            <a href="index.html#key" class="nav-link"> Key Features </a>
+          </li>
+          <li class="nav-items">
+            <a href="index.html#work" class="nav-link"> How It Work </a>
+          </li>
+          <li class="nav-items">
+            <a href="index.html#download" class="nav-link"> Downloads </a>
+          </li>
+
+          <li class="nav-items">
+            <a href="contact-us.html" class="nav-link"> Contact us </a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primary"> Get the App </a>
+      </nav>
+
+      <box-icon
+        class="menu"
+        name="menu-alt-right"
+        color="#00000"
+        size="lg"
+      ></box-icon>
+      <box-icon class="cancel-menu" name="x" color="#000000"></box-icon>
+    </header>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Feel free to ask for details, don't save any questions!</p>
+        <form class="form">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Message</label>
+            <textarea name="message" rows="12"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

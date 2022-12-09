@@ -33,6 +33,14 @@ img {
   width: 100%;
 }
 
+button {
+  border: none;
+  outline: none;
+  font-family: "BR Firma", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
 /* utilities */
 
 .bright {
@@ -61,6 +69,7 @@ img {
   font-weight: 400;
   color: #fff;
   padding: 1.4rem 1.6rem;
+  text-align: center;
 }
 
 .btn-primary {
@@ -99,7 +108,7 @@ header.header {
 }
 
 header > div.logo {
-  flex: 0.4;
+  flex: 0.2;
   display: flex;
   align-items: center;
 }
@@ -211,6 +220,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 /* keywords */
 .keywords {
+  /* height: 10ovh; */
   padding: 3.5rem 6.5rem 10.5rem 6.5rem;
 }
 
@@ -235,6 +245,25 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 .keywords .keywords-container .keywords-item h2:not(:last-child) {
   margin-right: 2.5rem;
+}
+
+.keyword {
+  padding: 3rem 6.5rem;
+  text-align: center;
+}
+
+.keyword h2 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: #10204d;
+  margin-bottom: 2rem;
+}
+
+.keyword p {
+  color: #10204d;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 4rem;
 }
 
 .community-savings {
@@ -435,6 +464,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 }
 
 .get-started {
+  /* height: 100vh; */
   padding: 6.5rem;
 }
 
@@ -595,6 +625,72 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
   margin-right: 3rem;
 }
 
+.contact {
+  margin-top: 136px;
+  padding: 6.5rem;
+}
+
+.contact h2 {
+  color: #212529;
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact p {
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.contact form.form {
+  margin-top: 4rem;
+}
+
+.contact form.form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact form.form .form-group:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
+.contact form.form .form-group label {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #777;
+}
+
+.contact form.form .form-group input {
+  padding: 1.5rem 2rem;
+  border: none;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+}
+.contact form.form .form-group textarea {
+  padding: 1.5rem 2rem;
+  border: none;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+}
+
+.contact form.form button {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
 .footer {
   padding: 8rem 8rem 6rem 8rem;
 }
@@ -641,7 +737,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 
 .footer .footer-container ul.footer-list.reach-us > div.social-icons div {
   background-color: #000;
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 1rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -652,7 +748,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .footer .footer-container ul.footer-list.reach-us > div.social-icons div img {
   width: auto;
   margin: 0 auto;
-  height: 18px;
+  height: 13px;
   object-fit: contain;
 }
 
