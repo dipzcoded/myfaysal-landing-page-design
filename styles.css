@@ -578,6 +578,7 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
   color: #ffffff;
   line-height: 2;
   font-size: 1.6rem;
+  margin-bottom: 3rem;
 }
 
 .subscribe .subscribe-container .content .form-display {
@@ -689,6 +690,29 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
 .contact form.form button {
   margin-top: 3rem;
   font-size: 1.4rem;
+}
+
+.learn-more {
+  margin-top: 136px;
+  padding: 6.5rem;
+}
+
+.learn-more h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #10204d;
+}
+
+.learn-more p {
+  color: #10204d;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.learn-more p:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 .footer {
