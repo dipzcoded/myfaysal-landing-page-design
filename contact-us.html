@@ -46,27 +46,27 @@
       <div class="container">
         <h2>Contact Us</h2>
         <p>Feel free to ask for details, don't save any questions!</p>
-        <form class="form">
+        <form class="form" id="form" method="post">
           <div class="form-group">
             <label for="fullName">Full Name</label>
-            <input type="text" />
+            <input type="text" id="name" required />
           </div>
 
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" />
+            <input type="email" id="email" required />
           </div>
 
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" />
+            <input type="text" id="subject" required />
           </div>
 
           <div class="form-group">
             <label for="subject">Message</label>
-            <textarea name="message" rows="12"></textarea>
+            <textarea required name="message" rows="12" id="message"></textarea>
           </div>
-          <button class="btn btn-primary" type="submit">Send Message</button>
+          <button class="btn btn-primary">Send Message</button>
         </form>
       </div>
     </section>

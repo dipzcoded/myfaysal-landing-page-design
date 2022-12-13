@@ -60,3 +60,44 @@ windowEvent.forEach((winEvt) => {
     }
   });
 });
+
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+document.getElementById("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  sendMessage({
+    fullName: fullName.value,
+    email: email.value,
+    subject: subject.value,
+    message: message.value,
+  });
+});
+
+const sendMessage = (arg) => {
+  const formData = new FormData();
+  formData.append("name", arg.fullName);
+  formData.append("email", arg.email);
+  formData.append("subject", arg.subject);
+  formData.append("content", arg.message);
+
+  const config = {
+    method: "POST",
+    body: formData,
+    redirect: "follow",
+  };
+
+  fetch("https://ajo.myfaysal.com/api/email/send", config)
+    .then((response) => response.json())
+    .then((result) => {
+      if (result.status === true) {
+        fullName.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
+      }
+    })
+    .catch((error) => console.log("error", error));
+};
