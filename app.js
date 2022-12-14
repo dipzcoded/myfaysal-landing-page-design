@@ -65,6 +65,10 @@ const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
+const honeyPotName = document.querySelector(".honeypot.honeypot-name");
+const honeyPotEmail = document.querySelector(".honeypot.honeypot-email");
+const honeyPotSubject = document.querySelector(".honeypot.honeypot-subject");
+const honeyPotMessage = document.querySelector(".honeypot.honeypot-message");
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -89,15 +93,22 @@ const sendMessage = (arg) => {
     redirect: "follow",
   };
 
-  fetch("https://ajo.myfaysal.com/api/email/send", config)
-    .then((response) => response.json())
-    .then((result) => {
-      if (result.status === true) {
+  if (
+    honeyPotName.value === "" &&
+    honeyPotEmail.value === "" &&
+    honeyPotSubject.value === "" &&
+    honeyPotMessage.value === ""
+  ) {
+    fetch("https://ajo.myfaysal.com/api/email/send", config)
+      .then((response) => response.text())
+      .then((result) => {
         fullName.value = "";
         email.value = "";
         subject.value = "";
         message.value = "";
-      }
-    })
-    .catch((error) => console.log("error", error));
+      })
+      .catch((error) => console.log("error", error));
+  } else {
+    console.log("not working");
+  }
 };

@@ -692,6 +692,10 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
   font-size: 1.4rem;
 }
 
+.contact .honeypot {
+  display: none;
+}
+
 .learn-more {
   margin-top: 136px;
   padding: 6.5rem;

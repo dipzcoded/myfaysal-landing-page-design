@@ -50,21 +50,37 @@
           <div class="form-group">
             <label for="fullName">Full Name</label>
             <input type="text" id="name" required />
+            <input type="text" name="honeypot" class="honeypot honeypot-name" />
           </div>
 
           <div class="form-group">
             <label for="email">Email Address</label>
             <input type="email" id="email" required />
+            <input
+              type="email"
+              name="honeypot"
+              class="honeypot honeypot-email"
+            />
           </div>
 
           <div class="form-group">
             <label for="subject">Subject</label>
             <input type="text" id="subject" required />
+            <input
+              type="text"
+              name="honeypot"
+              class="honeypot honeypot-subject"
+            />
           </div>
 
           <div class="form-group">
             <label for="subject">Message</label>
-            <textarea required name="message" rows="12" id="message"></textarea>
+            <textarea required rows="12" id="message"></textarea>
+            <textarea
+              rows="12"
+              class="honeypot honeypot-message"
+              name="honeypot"
+            ></textarea>
           </div>
           <button class="btn btn-primary">Send Message</button>
         </form>
