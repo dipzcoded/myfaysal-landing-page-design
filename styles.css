@@ -715,8 +715,20 @@ header > nav.nav ul.nav-wrapper li.nav-items a.nav-link {
   text-align: justify;
 }
 
-.learn-more p:not(:last-child) {
+.learn-more p:not(:last-of-type) {
   margin-bottom: 3rem;
+}
+
+.learn-more ul.loan-features {
+  margin-top: 2rem;
+}
+
+.learn-more ul.loan-features li {
+  font-size: 1.5rem;
+}
+
+.learn-more ul.loan-features li:not(:last-of-type) {
+  margin-bottom: 2.2rem;
 }
 
 .footer {
